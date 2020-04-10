@@ -1,0 +1,161 @@
+html {
+  height: 100%;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+#container {
+  height: 530px;
+  width: 750px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(158, 223, 248);
+  box-shadow: 0px 5px 10px 0px cadetblue;
+  -moz-box-shadow: 0px 5px 10px 0px cadetblue;
+  -webkit-box-shadow: 0px 5px 10px 0px cadetblue;
+  position: relative;
+}
+#score {
+  width: 60px;
+  background: rgb(240, 186, 51);
+  color: black;
+  padding: 10px;
+  box-shadow: 0px 5px 10px 0px #d86518;
+  -moz-box-shadow: 0px 5px 10px 0px #d86518;
+  -webkit-box-shadow: 0px 5px 10px 0px #d86518;
+
+  position: absolute;
+  left: 700px;
+}
+#correct {
+  position: absolute;
+  left: 320px;
+  background-color: rgb(9, 238, 9);
+  color: white;
+  padding: 10px;
+  box-shadow: 0px 5px 10px 0px rgb(8, 151, 8);
+  -moz-box-shadow: 0px 5px 10px 0px rgb(8, 151, 8);
+  -webkit-box-shadow: 0px 5px 10px 0px rgb(8, 151, 8);
+
+  display: none;
+}
+#wrong {
+  position: absolute;
+  left: 320px;
+  background-color: rgb(209, 7, 7);
+  color: white;
+  padding: 10px;
+  -moz-box-shadow: 0px 5px 10px 0px rgb(138, 2, 2);
+  -webkit-box-shadow: 0px 5px 10px 0px rgb(138, 2, 2);
+
+  display: none;
+}
+#virusContainer {
+  background-color: white;
+  color: black;
+  width: 650px;
+  height: 350px;
+  margin: 50px auto 5px auto;
+  box-shadow: 0px 5px 0px 0px rgb(95, 3, 104);
+  -moz-box-shadow: 0px 5px 0px 0px rgb(95, 3, 104);
+  -webkit-box-shadow: 0px 5px 0px 0px rgb(95, 3, 104);
+
+  font-family: "Permanent Marker", cursive;
+  font-size: 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#instruction {
+  background-color: rgb(122, 19, 131);
+  color: white;
+  width: 650px;
+  height: 50px;
+  margin: 10px auto;
+  box-shadow: 0px 5px 0px 0px rgb(228, 84, 241);
+  -moz-box-shadow: 0px 5px 0px 0px rgb(228, 84, 241);
+  -webkit-box-shadow: 0px 5px 0px 0px rgb(228, 84, 241);
+
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+#startreset {
+  height: 50px;
+  width: 110px;
+  background-color: blanchedalmond;
+  color: black;
+  margin: 0px auto;
+  margin-top: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 5px rgb(246, 222, 248);
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+#startreset:hover {
+  background-color: rgb(95, 3, 104);
+  box-shadow: 0px 7px rgb(246, 222, 248);
+  font-family: "Permanent Marker", cursive;
+  line-height: 60px;
+  color: white;
+}
+#startreset:active {
+  box-shadow: 0px 0px rgb(246, 222, 248);
+  top: 5px;
+}
+#trialsLeft {
+  display: none;
+}
+
+#vaccineContainer {  
+  position: absolute;
+  height: 30px;
+  width: 150px;
+  top: 10px;
+  left: 70px;
+  padding: 10px;
+  background: rgb(240, 186, 51);
+  color: black;
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px 0px #d86518;
+  -moz-box-shadow: 0px 5px 10px 0px #d86518;
+  -webkit-box-shadow: 0px 5px 10px 0px #d86518;
+  text-align: center;
+  line-height: 50px;
+  display:flex;
+}
+
+#gameOver {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  z-index: 2;
+  top: 120px;
+  left: 150px;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  line-height: 4em;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  box-shadow: 0px 5px 2px 0px #853703;
+  display: none;
+}
+.life {
+  width: 22px;
+  height: 24px;
+  margin: 0 5px;
+}
+.virus {
+  display: none;
+  position: absolute;
+}
